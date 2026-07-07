@@ -209,6 +209,12 @@ h1.ch-title em{font-style:italic;}
 .mcard .mwhen{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-top:6px;}
 .mcard .mfor{margin-top:22px;font-size:18px;color:var(--ink-2);line-height:1.5;}
 .mcard .mfor b{color:var(--ink);font-weight:600;}
+/* premium tier — smaller, quieter (rare use) */
+.mcard.premium{flex:.72;padding:24px 26px;background:var(--bg);}
+.mcard.premium .mname{font-size:24px;color:var(--ink-2);}
+.mcard.premium .mwhen{color:var(--ink-4);}
+.mcard.premium .mfor{margin-top:14px;font-size:15px;color:var(--ink-3);line-height:1.5;}
+.mcard.premium .mfor b{color:var(--ink-2);font-weight:600;}
 .when-push{margin-top:34px;display:flex;gap:18px;max-width:880px;}
 .when-push .wp{flex:1;border:1px solid var(--rule);border-radius:13px;padding:22px 24px;background:var(--bg-soft);}
 .when-push .wp .wpn{font-family:var(--mono);font-size:34px;font-weight:600;color:var(--accent);line-height:1;}
@@ -876,9 +882,14 @@ h1.ch-title em{font-style:italic;}
           <div class="mfor">Reach for it on <b>complex work</b> — anything that has to be right.</div>
         </div>
         <div class="mcard">
-          <div class="mname">Sonnet 4.6</div>
+          <div class="mname">Sonnet 5</div>
           <div class="mwhen">Faster · cheaper</div>
           <div class="mfor">Short, low-stakes jobs — a <b>quick rewrite</b>, a short summary.</div>
+        </div>
+        <div class="mcard premium">
+          <div class="mname">Fable 5</div>
+          <div class="mwhen">Pay-per-use</div>
+          <div class="mfor">The most capable model — and the most expensive, billed by usage. Reserve it for extreme jobs: <b>100s of files</b>, or <b>30+ steps</b>.</div>
         </div>
       </div>
       <div class="demo-reminder">
