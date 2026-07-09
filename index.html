@@ -566,6 +566,11 @@ h1.ch-title em{font-style:italic;}
 .push-callout .pc-item{font-size:16px;color:var(--ink-2);}
 .push-callout .pc-item b{color:var(--ink);font-weight:600;}
 .push-callout .pc-div{width:1px;height:20px;background:var(--rule-2);flex:none;}
+/* subtle Fable 5 callout (reasoning slide) */
+.fable-note{margin-top:38px;display:flex;align-items:center;justify-content:center;gap:16px;font-family:var(--mono);font-size:14px;letter-spacing:.02em;color:var(--ink-4);}
+.fable-note .fn-head{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);flex:none;}
+.fable-note .fn-div{width:1px;height:16px;background:var(--rule-2);flex:none;}
+.fable-note b{color:var(--ink-2);font-weight:600;}
 
 /* S16 grounding cards */
 .gline-cards{display:flex;gap:30px;margin-top:24px;}
@@ -901,19 +906,18 @@ h1.ch-title em{font-style:italic;}
     <!-- 12 — CH4 reasoning ladder (+ when-to-push callout merged in) -->
     <section class="slide" data-ch="4">
       <div class="kicker">How hard it thinks</div>
-      <h2 class="title" style="margin-bottom:30px;">Default to <span class="accent">High.</span> Skip <span class="accent">Max.</span></h2>
+      <h2 class="title" style="margin-bottom:30px;">Default to <span class="accent">High.</span> Skip <span class="accent">Extra &amp; Max.</span></h2>
       <div class="ladder2">
         <div class="lrung"><span class="lbar" style="--h:22%"></span><span class="lname">Low</span></div>
         <div class="lrung"><span class="lbar" style="--h:40%"></span><span class="lname">Medium</span></div>
         <div class="lrung is-def"><span class="lbar" style="--h:64%"><span class="lflag">default</span></span><span class="lname">High</span></div>
-        <div class="lrung is-extra"><span class="lbar" style="--h:82%"><span class="lflag">if demanding</span></span><span class="lname">Extra</span></div>
+        <div class="lrung is-skip"><span class="lbar" style="--h:82%"><span class="lflag x">overthinks</span></span><span class="lname">Extra</span></div>
         <div class="lrung is-skip"><span class="lbar" style="--h:100%"><span class="lflag x">overthinks</span></span><span class="lname">Max</span></div>
       </div>
-      <div class="push-callout">
-        <span class="pc-head">Push up only for</span>
-        <span class="pc-item"><b>10+</b> sequential steps</span>
-        <span class="pc-div"></span>
-        <span class="pc-item">low quality or <b>inconsistent output</b></span>
+      <div class="fable-note">
+        <span class="fn-head">Genuinely extreme</span>
+        <span class="fn-div"></span>
+        <span>100s of files or 30+ steps? That's a job for <b>Fable 5</b> — not Max.</span>
       </div>
     </section>
 
